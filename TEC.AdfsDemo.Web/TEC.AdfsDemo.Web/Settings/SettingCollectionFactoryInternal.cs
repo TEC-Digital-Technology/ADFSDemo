@@ -43,6 +43,7 @@ namespace TEC.AdfsDemo.Web.Settings
                                 [DemoWebSettingEnum.PlatformName] = ConfigurationManager.AppSettings["PlatformName"],
                                 [DemoWebSettingEnum.AES256Key] = ConfigurationManager.AppSettings["AES256Key"],
                                 [DemoWebSettingEnum.AES256IV] = ConfigurationManager.AppSettings["AES256IV"],
+                                [DemoWebSettingEnum.LogoutUrlFormat] = ConfigurationManager.AppSettings["ida:LogoutUrlFormat"],
                             };
 
                             provider.save(demoWebSettingCollection);

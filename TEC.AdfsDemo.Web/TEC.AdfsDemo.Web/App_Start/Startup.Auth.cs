@@ -19,7 +19,7 @@ namespace TEC.AdfsDemo.Web
             app.UseCookieAuthentication(new CookieAuthenticationOptions()
             {
                 AuthenticationType = DefaultAuthenticationTypes.ApplicationCookie,
-                LoginPath = new PathString("/OAuth2/SignIn"),
+                LoginPath = new PathString("/OAuth/RedirectToSignInPage"),
             });
 
             OAuthBearerAuthenticationOptions oAuthBearerAuthenticationOptions = Startup.OAuthBearerAuthenticationOptions;

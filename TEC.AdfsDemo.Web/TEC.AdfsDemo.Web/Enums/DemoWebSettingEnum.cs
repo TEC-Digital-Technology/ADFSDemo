@@ -49,6 +49,13 @@ namespace TEC.AdfsDemo.Web.Enums
         /// <summary>
         /// 帳號資料伺服器位址，用於介接內部系統使用(TEC Internal Utils)，屬於 <see cref="Uri"/>
         /// </summary>
-        AccountServiceApiBaseLocation
+        AccountServiceApiBaseLocation,
+        /// <summary>
+        /// 登出路徑的 Url 格式，屬於 <see cref="String"/>
+        /// <para>
+        /// 回傳值類似 https://domain/logout?post_logout_redirect_uri={0} ，{0} 為登出完成後要導向的頁面，須經由格式化處理
+        /// </para>
+        /// </summary>
+        LogoutUrlFormat,
     }
 }
