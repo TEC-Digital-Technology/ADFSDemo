@@ -33,7 +33,7 @@ namespace TEC.AdfsDemo.Web.Controllers
                 if (String.Compare(error, "access_denied", true) == 0)
                 {
                     errorModel.Title = "存取被拒";
-                    errorModel.MessageHtml = "此帳號沒有權限存取[EPP 易點]後台，請更換帳號後重新嘗試。";
+                    errorModel.MessageHtml = "此帳號沒有權限存取網站，請更換帳號後重新嘗試。";
 
                 }
                 else
