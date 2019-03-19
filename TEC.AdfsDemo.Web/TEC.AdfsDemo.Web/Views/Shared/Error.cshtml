@@ -1,0 +1,21 @@
+﻿@model TEC.AdfsDemo.Web.Models.Shared.ErrorModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>發生錯誤</title>
+</head>
+<body>
+    <div>
+        @this.Model.ErrorCode - @this.Model.Title
+    </div>
+    <div>
+        @Html.Raw(this.Model.MessageHtml)
+    </div>
+</body>
+</html>
